@@ -104,14 +104,24 @@ class ViewController: UIViewController {
     //            }
     //        }
     //    }
-    
+    private func animateButton(button: GameButton) {
+        UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {
+            // any transform value of 1.0 represents the identity (original state)
+            button.transform = CGAffineTransform(scaleX: 10.0, y: 10.0)
+            button.alpha = 0.0
+        }
+        UIView.animate(withDuration: 0.3) {
+            button.transform = CGAffineTransform.identity
+            button.alpha = 1.0
+        }
+    }
     @IBAction func gameButtonPressed(_ sender: GameButton) {
         guard let middleIndex = gameButtons.firstIndex(of: sender) else {
             return
         }
         gameButtons[middleIndex].active.toggle()
         cycleButtonColors(button: gameButtons[middleIndex])
-        
+        animateButton(button: gameButtons[middleIndex])
         let topIndex = middleIndex - 5
         let bottomIndex = middleIndex + 5
         let leftIndex = middleIndex - 1
@@ -120,19 +130,22 @@ class ViewController: UIViewController {
         if topIndex >= 0 {
             gameButtons[topIndex].active.toggle()
             cycleButtonColors(button: gameButtons[topIndex])
+            animateButton(button: gameButtons[topIndex])
         }
         if bottomIndex <= 24 {
             gameButtons[bottomIndex].active.toggle()
             cycleButtonColors(button: gameButtons[bottomIndex])
+            animateButton(button: gameButtons[bottomIndex])
         }
         if leftIndex % 5 != 4 && leftIndex >= 0 {
             gameButtons[leftIndex].active.toggle()
             cycleButtonColors(button: gameButtons[leftIndex])
-            
+            animateButton(button: gameButtons[leftIndex])
         }
         if rightIndex % 5 != 0 && rightIndex <= 24 {
             gameButtons[rightIndex].active.toggle()
             cycleButtonColors(button: gameButtons[rightIndex])
+            animateButton(button: gameButtons[rightIndex])
         }
     }
     
