@@ -54,8 +54,10 @@ class ViewController: UIViewController {
         setGameButtonColor(button: button)
     }
     private func setGameButtonColor(button: GameButton) {
+        let currentBkgdColor = button.backgroundColor
         if button.active {
-            UIView.animate(withDuration: 0.5) {
+            UIView.animate(withDuration: 1.0, delay: 0.0, options: [.allowUserInteraction]) {
+                button.backgroundColor = currentBkgdColor
                 switch button.currentCycle {
                 case 0:
                     button.backgroundColor = UIColor.defaultColor
@@ -88,33 +90,35 @@ class ViewController: UIViewController {
                 default:
                     button.backgroundColor = UIColor.defaultColor
                 }
+                self.animationScaleEffect(view: button, animationTime: 0.01)
             }
         } else {
+            UIView.animate(withDuration: 1.0, animations: {
+            button.backgroundColor = currentBkgdColor
             button.backgroundColor = UIColor.defaultColor
+            })
         }
+//        self.animationScaleEffect(view: button, animationTime: 0.3)
     }
-    //    private func checkButtonInRange(button: GameButton, index: Int)  {
-    //        print("Testing index: \(index)")
-    //        guard index >= 0 && index <= 24 else {
-    //            print("Out of range")
-    //            return
-    //        }
-    //        if index % 5 != 0 {
-    //            if index % 5 != 1 {
-    //                cycleButtonColors(button: button)
-    //            }
-    //        }
-    //    }
+    func animationScaleEffect(view:UIView,animationTime:Float) {
+        UIView.animate(withDuration: TimeInterval(animationTime), animations: {
+            view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        },completion:{ (completion) in
+            UIView.animate(withDuration: TimeInterval(animationTime), animations: { () -> Void in
+                view.transform = CGAffineTransform(scaleX: 1, y: 1)
+            })
+        })
+    }
     private func animateButton(button: GameButton) {
-        UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {
-            // any transform value of 1.0 represents the identity (original state)
-            button.transform = CGAffineTransform(scaleX: 10.0, y: 10.0)
-            button.alpha = 0.0
-        }
-        UIView.animate(withDuration: 0.3) {
-            button.transform = CGAffineTransform.identity
-            button.alpha = 1.0
-        }
+//        UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {
+//            // any transform value of 1.0 represents the identity (original state)
+//            button.transform = CGAffineTransform(scaleX: 10.0, y: 10.0)
+//            button.alpha = 0.0
+//        }
+//        UIView.animate(withDuration: 0.3) {
+//            button.transform = CGAffineTransform.identity
+//            button.alpha = 1.0
+//        }
     }
     private func winCheck() -> Bool {
         for button in gameButtons {
