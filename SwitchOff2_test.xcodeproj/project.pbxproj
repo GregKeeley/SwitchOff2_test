@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8851048F251645A7005BA1B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851048E251645A7005BA1B0 /* AppDelegate.swift */; };
+		88510491251645A7005BA1B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88510490251645A7005BA1B0 /* SceneDelegate.swift */; };
+		88510493251645A7005BA1B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88510492251645A7005BA1B0 /* ViewController.swift */; };
+		88510496251645A7005BA1B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88510494251645A7005BA1B0 /* Main.storyboard */; };
+		88510498251645A9005BA1B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88510497251645A9005BA1B0 /* Assets.xcassets */; };
+		8851049B251645A9005BA1B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88510499251645A9005BA1B0 /* LaunchScreen.storyboard */; };
+		885104A6251645A9005BA1B0 /* SwitchOff2_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885104A5251645A9005BA1B0 /* SwitchOff2_testTests.swift */; };
+		885104B1251645A9005BA1B0 /* SwitchOff2_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885104B0251645A9005BA1B0 /* SwitchOff2_testUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		885104A2251645A9005BA1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88510483251645A6005BA1B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8851048A251645A7005BA1B0;
+			remoteInfo = SwitchOff2_test;
+		};
+		885104AD251645A9005BA1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88510483251645A6005BA1B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8851048A251645A7005BA1B0;
+			remoteInfo = SwitchOff2_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8851048B251645A7005BA1B0 /* SwitchOff2_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchOff2_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8851048E251645A7005BA1B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88510490251645A7005BA1B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88510492251645A7005BA1B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88510495251645A7005BA1B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88510497251645A9005BA1B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8851049A251645A9005BA1B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8851049C251645A9005BA1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885104A1251645A9005BA1B0 /* SwitchOff2_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchOff2_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		885104A5251645A9005BA1B0 /* SwitchOff2_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchOff2_testTests.swift; sourceTree = "<group>"; };
+		885104A7251645A9005BA1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		885104AC251645A9005BA1B0 /* SwitchOff2_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchOff2_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		885104B0251645A9005BA1B0 /* SwitchOff2_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchOff2_testUITests.swift; sourceTree = "<group>"; };
+		885104B2251645A9005BA1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88510488251645A7005BA1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8851049E251645A9005BA1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885104A9251645A9005BA1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88510482251645A6005BA1B0 = {
+			isa = PBXGroup;
+			children = (
+				8851048D251645A7005BA1B0 /* SwitchOff2_test */,
+				885104A4251645A9005BA1B0 /* SwitchOff2_testTests */,
+				885104AF251645A9005BA1B0 /* SwitchOff2_testUITests */,
+				8851048C251645A7005BA1B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8851048C251645A7005BA1B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8851048B251645A7005BA1B0 /* SwitchOff2_test.app */,
+				885104A1251645A9005BA1B0 /* SwitchOff2_testTests.xctest */,
+				885104AC251645A9005BA1B0 /* SwitchOff2_testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8851048D251645A7005BA1B0 /* SwitchOff2_test */ = {
+			isa = PBXGroup;
+			children = (
+				8851048E251645A7005BA1B0 /* AppDelegate.swift */,
+				88510490251645A7005BA1B0 /* SceneDelegate.swift */,
+				88510492251645A7005BA1B0 /* ViewController.swift */,
+				88510494251645A7005BA1B0 /* Main.storyboard */,
+				88510497251645A9005BA1B0 /* Assets.xcassets */,
+				88510499251645A9005BA1B0 /* LaunchScreen.storyboard */,
+				8851049C251645A9005BA1B0 /* Info.plist */,
+			);
+			path = SwitchOff2_test;
+			sourceTree = "<group>";
+		};
+		885104A4251645A9005BA1B0 /* SwitchOff2_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				885104A5251645A9005BA1B0 /* SwitchOff2_testTests.swift */,
+				885104A7251645A9005BA1B0 /* Info.plist */,
+			);
+			path = SwitchOff2_testTests;
+			sourceTree = "<group>";
+		};
+		885104AF251645A9005BA1B0 /* SwitchOff2_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				885104B0251645A9005BA1B0 /* SwitchOff2_testUITests.swift */,
+				885104B2251645A9005BA1B0 /* Info.plist */,
+			);
+			path = SwitchOff2_testUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8851048A251645A7005BA1B0 /* SwitchOff2_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885104B5251645A9005BA1B0 /* Build configuration list for PBXNativeTarget "SwitchOff2_test" */;
+			buildPhases = (
+				88510487251645A7005BA1B0 /* Sources */,
+				88510488251645A7005BA1B0 /* Frameworks */,
+				88510489251645A7005BA1B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchOff2_test;
+			productName = SwitchOff2_test;
+			productReference = 8851048B251645A7005BA1B0 /* SwitchOff2_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		885104A0251645A9005BA1B0 /* SwitchOff2_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885104B8251645A9005BA1B0 /* Build configuration list for PBXNativeTarget "SwitchOff2_testTests" */;
+			buildPhases = (
+				8851049D251645A9005BA1B0 /* Sources */,
+				8851049E251645A9005BA1B0 /* Frameworks */,
+				8851049F251645A9005BA1B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885104A3251645A9005BA1B0 /* PBXTargetDependency */,
+			);
+			name = SwitchOff2_testTests;
+			productName = SwitchOff2_testTests;
+			productReference = 885104A1251645A9005BA1B0 /* SwitchOff2_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		885104AB251645A9005BA1B0 /* SwitchOff2_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885104BB251645A9005BA1B0 /* Build configuration list for PBXNativeTarget "SwitchOff2_testUITests" */;
+			buildPhases = (
+				885104A8251645A9005BA1B0 /* Sources */,
+				885104A9251645A9005BA1B0 /* Frameworks */,
+				885104AA251645A9005BA1B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				885104AE251645A9005BA1B0 /* PBXTargetDependency */,
+			);
+			name = SwitchOff2_testUITests;
+			productName = SwitchOff2_testUITests;
+			productReference = 885104AC251645A9005BA1B0 /* SwitchOff2_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88510483251645A6005BA1B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8851048A251645A7005BA1B0 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					885104A0251645A9005BA1B0 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8851048A251645A7005BA1B0;
+					};
+					885104AB251645A9005BA1B0 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8851048A251645A7005BA1B0;
+					};
+				};
+			};
+			buildConfigurationList = 88510486251645A6005BA1B0 /* Build configuration list for PBXProject "SwitchOff2_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88510482251645A6005BA1B0;
+			productRefGroup = 8851048C251645A7005BA1B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8851048A251645A7005BA1B0 /* SwitchOff2_test */,
+				885104A0251645A9005BA1B0 /* SwitchOff2_testTests */,
+				885104AB251645A9005BA1B0 /* SwitchOff2_testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88510489251645A7005BA1B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8851049B251645A9005BA1B0 /* LaunchScreen.storyboard in Resources */,
+				88510498251645A9005BA1B0 /* Assets.xcassets in Resources */,
+				88510496251645A7005BA1B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8851049F251645A9005BA1B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885104AA251645A9005BA1B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88510487251645A7005BA1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88510493251645A7005BA1B0 /* ViewController.swift in Sources */,
+				8851048F251645A7005BA1B0 /* AppDelegate.swift in Sources */,
+				88510491251645A7005BA1B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8851049D251645A9005BA1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885104A6251645A9005BA1B0 /* SwitchOff2_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		885104A8251645A9005BA1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885104B1251645A9005BA1B0 /* SwitchOff2_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		885104A3251645A9005BA1B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8851048A251645A7005BA1B0 /* SwitchOff2_test */;
+			targetProxy = 885104A2251645A9005BA1B0 /* PBXContainerItemProxy */;
+		};
+		885104AE251645A9005BA1B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8851048A251645A7005BA1B0 /* SwitchOff2_test */;
+			targetProxy = 885104AD251645A9005BA1B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88510494251645A7005BA1B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88510495251645A7005BA1B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88510499251645A9005BA1B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8851049A251645A9005BA1B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		885104B3251645A9005BA1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		885104B4251645A9005BA1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		885104B6251645A9005BA1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4KQ459XHC;
+				INFOPLIST_FILE = SwitchOff2_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KeeleyGreg.SwitchOff2-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		885104B7251645A9005BA1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4KQ459XHC;
+				INFOPLIST_FILE = SwitchOff2_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KeeleyGreg.SwitchOff2-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		885104B9251645A9005BA1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4KQ459XHC;
+				INFOPLIST_FILE = SwitchOff2_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KeeleyGreg.SwitchOff2-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchOff2_test.app/SwitchOff2_test";
+			};
+			name = Debug;
+		};
+		885104BA251645A9005BA1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4KQ459XHC;
+				INFOPLIST_FILE = SwitchOff2_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KeeleyGreg.SwitchOff2-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwitchOff2_test.app/SwitchOff2_test";
+			};
+			name = Release;
+		};
+		885104BC251645A9005BA1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4KQ459XHC;
+				INFOPLIST_FILE = SwitchOff2_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KeeleyGreg.SwitchOff2-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwitchOff2_test;
+			};
+			name = Debug;
+		};
+		885104BD251645A9005BA1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4KQ459XHC;
+				INFOPLIST_FILE = SwitchOff2_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KeeleyGreg.SwitchOff2-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwitchOff2_test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88510486251645A6005BA1B0 /* Build configuration list for PBXProject "SwitchOff2_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885104B3251645A9005BA1B0 /* Debug */,
+				885104B4251645A9005BA1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885104B5251645A9005BA1B0 /* Build configuration list for PBXNativeTarget "SwitchOff2_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885104B6251645A9005BA1B0 /* Debug */,
+				885104B7251645A9005BA1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885104B8251645A9005BA1B0 /* Build configuration list for PBXNativeTarget "SwitchOff2_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885104B9251645A9005BA1B0 /* Debug */,
+				885104BA251645A9005BA1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885104BB251645A9005BA1B0 /* Build configuration list for PBXNativeTarget "SwitchOff2_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885104BC251645A9005BA1B0 /* Debug */,
+				885104BD251645A9005BA1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88510483251645A6005BA1B0 /* Project object */;
+}
