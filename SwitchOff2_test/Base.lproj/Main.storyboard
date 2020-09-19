@@ -1,24 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwitchOff2_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="y2W-FR-E7w">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M0w-Qx-rbQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="71.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsq-fs-hlY" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3a9-xj-qCW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbg-ka-Rpt" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="75.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfr-JF-vsd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8u-1M-aHS" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="0.0" width="72" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRr-EZ-drS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awd-BG-Ilt" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTC-6D-zMt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RML-zk-NnM" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="302.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C2R-mV-Ig3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HJc-BJ-d5c">
+                                        <rect key="frame" x="0.0" y="75.5" width="374" height="71.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC9-Mw-W3h" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfM-My-MYI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3N-49-WWe" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="75.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHN-oI-XA7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diy-xx-TcQ" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="0.0" width="72" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuC-cD-Wg2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-Tg-k85" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ge7-fZ-6w6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="150-cz-GJj" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="302.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H04-nB-MxB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="X7P-k7-Mc0">
+                                        <rect key="frame" x="0.0" y="151" width="374" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApL-cP-KKh" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FdN-Ir-9Sh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGV-nY-CWH" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="75.5" y="0.0" width="71.5" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vUV-OQ-Dxr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SY-Hy-QYt" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="0.0" width="72" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLZ-JN-7dD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N68-nJ-68v" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="0.0" width="71.5" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fT0-Qr-NJM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebM-H5-WPh" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="302.5" y="0.0" width="71.5" height="72"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAQ-Jq-Yow"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="L6t-E3-dBN">
+                                        <rect key="frame" x="0.0" y="227" width="374" height="71.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkL-mN-epF" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1id-2y-w9M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQr-QU-suy" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="75.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1V-kH-Iex"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHS-tZ-cG7" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="0.0" width="72" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGC-EH-YUW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwt-d1-l5X" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rza-gy-8qe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeN-z9-C9b" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="302.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAl-7x-Tft"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IEp-Jh-yoR">
+                                        <rect key="frame" x="0.0" y="302.5" width="374" height="71.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMT-9u-mN1" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogN-Ua-tFj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4k-W5-BrU" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="75.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HeG-Iq-jjX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l99-QL-oSs" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="151" y="0.0" width="72" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaz-Ja-xmX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fla-ip-pgg" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1b-Fj-7ra"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-QP-ccg" customClass="GameButton" customModule="SwitchOff2_test" customModuleProvider="target">
+                                                <rect key="frame" x="302.5" y="0.0" width="71.5" height="71.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="gameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILn-E8-kTe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y2W-FR-E7w" secondAttribute="height" multiplier="1:1" id="feI-gB-UMd"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-7q-BMT">
+                                <rect key="frame" x="187.5" y="731" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YR9-62-G9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1CK-7q-BMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="02A-6A-Jb0"/>
+                            <constraint firstItem="1CK-7q-BMT" firstAttribute="top" secondItem="y2W-FR-E7w" secondAttribute="bottom" constant="96" id="VRB-4q-lKY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y2W-FR-E7w" secondAttribute="trailing" constant="20" id="hVt-lA-Nmt"/>
+                            <constraint firstItem="y2W-FR-E7w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i9O-kp-CKw"/>
+                            <constraint firstItem="y2W-FR-E7w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iiv-o1-tcA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="gameButtons" destination="wsq-fs-hlY" collectionClass="NSMutableArray" id="VEV-Ev-GyJ"/>
+                        <outletCollection property="gameButtons" destination="lbg-ka-Rpt" collectionClass="NSMutableArray" id="TU4-gi-mtw"/>
+                        <outletCollection property="gameButtons" destination="S8u-1M-aHS" collectionClass="NSMutableArray" id="SzG-cF-spo"/>
+                        <outletCollection property="gameButtons" destination="Awd-BG-Ilt" collectionClass="NSMutableArray" id="HeE-Ra-Ko7"/>
+                        <outletCollection property="gameButtons" destination="RML-zk-NnM" collectionClass="NSMutableArray" id="1jb-kq-rzN"/>
+                        <outletCollection property="gameButtons" destination="VC9-Mw-W3h" collectionClass="NSMutableArray" id="sIH-BG-OJB"/>
+                        <outletCollection property="gameButtons" destination="W3N-49-WWe" collectionClass="NSMutableArray" id="rxs-M9-Fh9"/>
+                        <outletCollection property="gameButtons" destination="diy-xx-TcQ" collectionClass="NSMutableArray" id="eab-u8-cdc"/>
+                        <outletCollection property="gameButtons" destination="W4b-Tg-k85" collectionClass="NSMutableArray" id="XIj-ih-2O5"/>
+                        <outletCollection property="gameButtons" destination="150-cz-GJj" collectionClass="NSMutableArray" id="tWZ-iR-JJ4"/>
+                        <outletCollection property="gameButtons" destination="ApL-cP-KKh" collectionClass="NSMutableArray" id="Xy3-TD-h7o"/>
+                        <outletCollection property="gameButtons" destination="kGV-nY-CWH" collectionClass="NSMutableArray" id="oTB-t7-OWD"/>
+                        <outletCollection property="gameButtons" destination="0SY-Hy-QYt" collectionClass="NSMutableArray" id="t8Z-O4-Ty7"/>
+                        <outletCollection property="gameButtons" destination="N68-nJ-68v" collectionClass="NSMutableArray" id="65F-ls-U6k"/>
+                        <outletCollection property="gameButtons" destination="ebM-H5-WPh" collectionClass="NSMutableArray" id="q1C-1H-pXO"/>
+                        <outletCollection property="gameButtons" destination="mkL-mN-epF" collectionClass="NSMutableArray" id="v7t-5t-y6y"/>
+                        <outletCollection property="gameButtons" destination="tQr-QU-suy" collectionClass="NSMutableArray" id="vlZ-PD-aFc"/>
+                        <outletCollection property="gameButtons" destination="AHS-tZ-cG7" collectionClass="NSMutableArray" id="nV3-VY-iX2"/>
+                        <outletCollection property="gameButtons" destination="Wwt-d1-l5X" collectionClass="NSMutableArray" id="Z0B-Y0-UDg"/>
+                        <outletCollection property="gameButtons" destination="JeN-z9-C9b" collectionClass="NSMutableArray" id="FM6-hB-VSU"/>
+                        <outletCollection property="gameButtons" destination="KMT-9u-mN1" collectionClass="NSMutableArray" id="WkN-7k-5UA"/>
+                        <outletCollection property="gameButtons" destination="v4k-W5-BrU" collectionClass="NSMutableArray" id="Gw8-ZX-KEy"/>
+                        <outletCollection property="gameButtons" destination="l99-QL-oSs" collectionClass="NSMutableArray" id="IJL-yC-vIn"/>
+                        <outletCollection property="gameButtons" destination="fla-ip-pgg" collectionClass="NSMutableArray" id="Boj-gp-nsV"/>
+                        <outletCollection property="gameButtons" destination="7lf-QP-ccg" collectionClass="NSMutableArray" id="MiG-EO-irU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
