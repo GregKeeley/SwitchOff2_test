@@ -55,39 +55,40 @@ class ViewController: UIViewController {
     }
     private func setGameButtonColor(button: GameButton) {
         if button.active {
-            switch button.currentCycle {
-            case 0:
-                button.backgroundColor = UIColor.defaultColor
-            case 1:
-                button.backgroundColor = UIColor.color1
-            case 2:
-                button.backgroundColor = UIColor.color2
-            case 3:
-                button.backgroundColor = UIColor.color3
-            case 4:
-                button.backgroundColor = UIColor.color4
-            case 5:
-                button.backgroundColor = UIColor.color5
-            case 6:
-                button.backgroundColor = UIColor.color6
-            case 7:
-                button.backgroundColor = UIColor.color7
-            case 8:
-                button.backgroundColor = UIColor.color8
-            case 9:
-                button.backgroundColor = UIColor.color9
-            case 10:
-                button.backgroundColor = UIColor.color10
-            case 11:
-                button.backgroundColor = UIColor.color11
-            case 12:
-                button.backgroundColor = UIColor.color12
-            case 13:
-                button.backgroundColor = UIColor.color13
-            default:
-                button.backgroundColor = UIColor.defaultColor
+            UIView.animate(withDuration: 0.5) {
+                switch button.currentCycle {
+                case 0:
+                    button.backgroundColor = UIColor.defaultColor
+                case 1:
+                    button.backgroundColor = UIColor.color1
+                case 2:
+                    button.backgroundColor = UIColor.color2
+                case 3:
+                    button.backgroundColor = UIColor.color3
+                case 4:
+                    button.backgroundColor = UIColor.color4
+                case 5:
+                    button.backgroundColor = UIColor.color5
+                case 6:
+                    button.backgroundColor = UIColor.color6
+                case 7:
+                    button.backgroundColor = UIColor.color7
+                case 8:
+                    button.backgroundColor = UIColor.color8
+                case 9:
+                    button.backgroundColor = UIColor.color9
+                case 10:
+                    button.backgroundColor = UIColor.color10
+                case 11:
+                    button.backgroundColor = UIColor.color11
+                case 12:
+                    button.backgroundColor = UIColor.color12
+                case 13:
+                    button.backgroundColor = UIColor.color13
+                default:
+                    button.backgroundColor = UIColor.defaultColor
+                }
             }
-            
         } else {
             button.backgroundColor = UIColor.defaultColor
         }
@@ -115,7 +116,18 @@ class ViewController: UIViewController {
             button.alpha = 1.0
         }
     }
+    private func winCheck() -> Bool {
+        for button in gameButtons {
+            if button.active == true {
+                return false
+            }
+        }
+        return true
+    }
     @IBAction func gameButtonPressed(_ sender: GameButton) {
+        if winCheck() {
+            print("You win!")
+        }
         guard let middleIndex = gameButtons.firstIndex(of: sender) else {
             return
         }
