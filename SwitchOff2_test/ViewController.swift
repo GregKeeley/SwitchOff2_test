@@ -33,7 +33,7 @@ class GameButton: UIButton {
 class ViewController: UIViewController {
     
     @IBOutlet var gameButtons: [GameButton]!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
@@ -101,6 +101,11 @@ class ViewController: UIViewController {
 //        self.animationScaleEffect(view: button, animationTime: 0.3)
     }
     func animationScaleEffect(view:UIView,animationTime:Float) {
+        let pulse = PulseAnimation(numberOfPulses: Float.infinity, radius: 200, position: view.center)
+        pulse.animationDuration = 1.0
+        pulse.backgroundColor = view.backgroundColor?.cgColor
+        view.layer.insertSublayer(pulse, below: view.layer)
+        
         UIView.animate(withDuration: TimeInterval(animationTime), animations: {
             view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         },completion:{ (completion) in
@@ -108,6 +113,7 @@ class ViewController: UIViewController {
                 view.transform = CGAffineTransform(scaleX: 1, y: 1)
             })
         })
+        
     }
     private func animateButton(button: GameButton) {
 //        UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {

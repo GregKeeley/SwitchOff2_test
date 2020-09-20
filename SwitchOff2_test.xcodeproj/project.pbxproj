@@ -15,6 +15,7 @@
 		8851049B251645A9005BA1B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88510499251645A9005BA1B0 /* LaunchScreen.storyboard */; };
 		885104A6251645A9005BA1B0 /* SwitchOff2_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885104A5251645A9005BA1B0 /* SwitchOff2_testTests.swift */; };
 		885104B1251645A9005BA1B0 /* SwitchOff2_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885104B0251645A9005BA1B0 /* SwitchOff2_testUITests.swift */; };
+		88B639E7251783E1001AE5DE /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B639E6251783E1001AE5DE /* PulseAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		885104AC251645A9005BA1B0 /* SwitchOff2_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchOff2_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		885104B0251645A9005BA1B0 /* SwitchOff2_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchOff2_testUITests.swift; sourceTree = "<group>"; };
 		885104B2251645A9005BA1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B639E6251783E1001AE5DE /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				8851048E251645A7005BA1B0 /* AppDelegate.swift */,
 				88510490251645A7005BA1B0 /* SceneDelegate.swift */,
 				88510492251645A7005BA1B0 /* ViewController.swift */,
+				88B639E6251783E1001AE5DE /* PulseAnimation.swift */,
 				88510494251645A7005BA1B0 /* Main.storyboard */,
 				88510497251645A9005BA1B0 /* Assets.xcassets */,
 				88510499251645A9005BA1B0 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B639E7251783E1001AE5DE /* PulseAnimation.swift in Sources */,
 				88510493251645A7005BA1B0 /* ViewController.swift in Sources */,
 				8851048F251645A7005BA1B0 /* AppDelegate.swift in Sources */,
 				88510491251645A7005BA1B0 /* SceneDelegate.swift in Sources */,
