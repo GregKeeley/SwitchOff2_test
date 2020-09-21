@@ -46,6 +46,7 @@ class PulseAnimation: CALayer {
                 self.add(self.animationGroup, forKey: "pulse")
             }
         }
+        self.removeAllAnimations()
     }
     
     func createScaleAnimation() -> CABasicAnimation {

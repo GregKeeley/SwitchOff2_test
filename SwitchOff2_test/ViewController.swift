@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         let currentBkgdColor = button.backgroundColor
         if button.active {
             UIView.animate(withDuration: 1.0, delay: 0.0, options: [.allowUserInteraction]) {
-                button.backgroundColor = currentBkgdColor
+//                button.backgroundColor = currentBkgdColor
                 switch button.currentCycle {
                 case 0:
                     button.backgroundColor = UIColor.defaultColor
@@ -98,6 +98,7 @@ class ViewController: UIViewController {
             button.backgroundColor = UIColor.defaultColor
             })
         }
+        button.layer.removeAllAnimations()
 //        self.animationScaleEffect(view: button, animationTime: 0.3)
     }
     func animationScaleEffect(view:UIView,animationTime:Float) {
@@ -113,7 +114,7 @@ class ViewController: UIViewController {
                 view.transform = CGAffineTransform(scaleX: 1, y: 1)
             })
         })
-        
+        view.layer.removeAllAnimations()
     }
     private func animateButton(button: GameButton) {
 //        UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {
@@ -142,7 +143,9 @@ class ViewController: UIViewController {
             return
         }
         gameButtons[middleIndex].active.toggle()
+        if Range(0...24).contains(middleIndex) {
         cycleButtonColors(button: gameButtons[middleIndex])
+        }
         animateButton(button: gameButtons[middleIndex])
         let topIndex = middleIndex - 5
         let bottomIndex = middleIndex + 5
