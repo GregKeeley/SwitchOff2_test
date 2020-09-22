@@ -33,7 +33,7 @@ class GameButton: UIButton {
 class ViewController: UIViewController {
     
     @IBOutlet var gameButtons: [GameButton]!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         let currentBkgdColor = button.backgroundColor
         if button.active {
             UIView.animate(withDuration: 1.0, delay: 0.0, options: [.allowUserInteraction]) {
-//                button.backgroundColor = currentBkgdColor
+                //                button.backgroundColor = currentBkgdColor
                 switch button.currentCycle {
                 case 0:
                     button.backgroundColor = UIColor.defaultColor
@@ -94,38 +94,38 @@ class ViewController: UIViewController {
             }
         } else {
             UIView.animate(withDuration: 1.0, animations: {
-            button.backgroundColor = currentBkgdColor
-            button.backgroundColor = UIColor.defaultColor
+                button.backgroundColor = currentBkgdColor
+                button.backgroundColor = UIColor.defaultColor
             })
         }
-        button.layer.removeAllAnimations()
-//        self.animationScaleEffect(view: button, animationTime: 0.3)
+//        button.layer.removeAllAnimations()
+        //        self.animationScaleEffect(view: button, animationTime: 0.3)
     }
     func animationScaleEffect(view:UIView,animationTime:Float) {
-        let pulse = PulseAnimation(numberOfPulses: Float.infinity, radius: 200, position: view.center)
-        pulse.animationDuration = 1.0
-        pulse.backgroundColor = view.backgroundColor?.cgColor
-        view.layer.insertSublayer(pulse, below: view.layer)
-        
-        UIView.animate(withDuration: TimeInterval(animationTime), animations: {
-            view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-        },completion:{ (completion) in
-            UIView.animate(withDuration: TimeInterval(animationTime), animations: { () -> Void in
-                view.transform = CGAffineTransform(scaleX: 1, y: 1)
-            })
-        })
-        view.layer.removeAllAnimations()
+//        let pulse = PulseAnimation(numberOfPulses: Float.infinity, radius: 200, position: view.center)
+//        pulse.animationDuration = 1.0
+//        pulse.backgroundColor = view.backgroundColor?.cgColor
+//        view.layer.insertSublayer(pulse, below: view.layer)
+//
+//        UIView.animate(withDuration: TimeInterval(animationTime), animations: {
+//            view.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+//        },completion:{ (completion) in
+//            UIView.animate(withDuration: TimeInterval(animationTime), animations: { () -> Void in
+//                view.transform = CGAffineTransform(scaleX: 1, y: 1)
+//                view.layer.removeAllAnimations()
+//            })
+//        })
     }
     private func animateButton(button: GameButton) {
-//        UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {
-//            // any transform value of 1.0 represents the identity (original state)
-//            button.transform = CGAffineTransform(scaleX: 10.0, y: 10.0)
-//            button.alpha = 0.0
-//        }
-//        UIView.animate(withDuration: 0.3) {
-//            button.transform = CGAffineTransform.identity
-//            button.alpha = 1.0
-//        }
+//                UIView.animate(withDuration: 1.5, delay: 0.0, options: [.allowUserInteraction, .repeat]) {
+//                    // any transform value of 1.0 represents the identity (original state)
+//                    button.transform = CGAffineTransform(scaleX: 10.0, y: 10.0)
+//                    button.alpha = 0.0
+//                }
+//                UIView.animate(withDuration: 0.3) {
+//                    button.transform = CGAffineTransform.identity
+//                    button.alpha = 1.0
+//                }
     }
     private func winCheck() -> Bool {
         for button in gameButtons {
@@ -144,7 +144,7 @@ class ViewController: UIViewController {
         }
         gameButtons[middleIndex].active.toggle()
         if Range(0...24).contains(middleIndex) {
-        cycleButtonColors(button: gameButtons[middleIndex])
+            cycleButtonColors(button: gameButtons[middleIndex])
         }
         animateButton(button: gameButtons[middleIndex])
         let topIndex = middleIndex - 5
