@@ -33,6 +33,35 @@ class GameButton: UIButton {
 class ViewController: UIViewController {
     
     @IBOutlet var gameButtons: [GameButton]!
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    var timerIsPaused = true
+    var timerIsActive = false
+    var timer = Timer()
+        
+    var seconds: Int = 0 {
+        didSet {
+            if seconds < 10 && minutes < 10 {
+            timerLabel.text = ("0\(minutes):0\(seconds)")
+            } else if seconds < 10 && minutes >= 10 {
+                timerLabel.text = ("\(minutes):0\(seconds)")
+            } else {
+                timerLabel.text = ("0\(minutes):\(seconds)")
+            }
+        }
+    }
+    
+    var minutes: Int = 0 {
+        didSet {
+            if minutes < 10 {
+                timerLabel.text = ("0\(minutes):0\(seconds)")
+            } else {
+                timerLabel.text = ("\(minutes):0\(seconds)")
+            }
+        }
+    }
+    
+    var hours: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,7 +127,7 @@ class ViewController: UIViewController {
                 button.backgroundColor = UIColor.defaultColor
             })
         }
-//        button.layer.removeAllAnimations()
+        
         //        self.animationScaleEffect(view: button, animationTime: 0.3)
     }
     func animationScaleEffect(view:UIView,animationTime:Float) {
@@ -135,7 +164,34 @@ class ViewController: UIViewController {
         }
         return true
     }
+    private func startTimer() {
+//        timerIsPaused.toggle()
+        if timerIsPaused == false {
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
+                if self.seconds == 59 {
+                    self.seconds = 00
+                    if self.minutes == 59 {
+                        self.minutes = 00
+                        self.hours = self.hours + 1
+                    } else {
+                        self.minutes = self.minutes + 1
+                    }
+                } else {
+                    self.seconds = self.seconds + 1
+                }
+            }
+        } else {
+            timer.invalidate()
+        }
+    }
+    
     @IBAction func gameButtonPressed(_ sender: GameButton) {
+        
+        timerIsPaused = false
+        if timerIsActive == false {
+            startTimer()
+            timerIsActive = true
+        }
         if winCheck() {
             print("You win!")
         }
@@ -175,6 +231,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetButtonPressed(_ sender: UIButton) {
+        seconds = 0
+        minutes = 0
+        hours = 0
+        timerIsActive = false
+        timerIsPaused = true
+        timer.invalidate()
+        startTimer()
         for button in gameButtons {
             button.currentCycle = 0
             button.active = false
