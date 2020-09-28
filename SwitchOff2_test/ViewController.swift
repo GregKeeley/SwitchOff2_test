@@ -34,11 +34,18 @@ class ViewController: UIViewController {
     
     @IBOutlet var gameButtons: [GameButton]!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var buttonPressesLabel: UILabel!
     
     var timerIsPaused = true
     var timerIsActive = false
     var timer = Timer()
         
+    var buttonPresses = 0 {
+        didSet {
+            buttonPressesLabel.text = ("Button Presses: \(buttonPresses)")
+        }
+    }
+    
     var seconds: Int = 0 {
         didSet {
             if seconds < 10 && minutes < 10 {
@@ -186,7 +193,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func gameButtonPressed(_ sender: GameButton) {
-        
+        buttonPresses += 1
         timerIsPaused = false
         if timerIsActive == false {
             startTimer()
@@ -231,6 +238,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetButtonPressed(_ sender: UIButton) {
+        buttonPresses = 0
         seconds = 0
         minutes = 0
         hours = 0
